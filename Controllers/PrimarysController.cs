@@ -11,8 +11,12 @@ namespace Primeiro.Controllers {
     [ApiController]
     public class PrimarysController : ControllerBase
     {
+        private readonly IPrimeiroRepo _repository;
 
-        private readonly MockPrimeiroRepo _repository = new MockPrimeiroRepo();
+        public PrimarysController(IPrimeiroRepo repository)
+        {
+            _repository = repository;
+        }        
 
         [HttpGet]
         public ActionResult<IEnumerable<Primary>> GetAllPrimary()
