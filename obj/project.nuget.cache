@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "egfV/UiGOBExctvampnijbjhap1ZIyuRTOGrmSXyNDIFZ+QKT8HuOdeIJr4Hx2Xq6v+rCHjvUY4vAM4TdQTSKA==",
+  "success": true,
+  "projectFilePath": "E:\\www\\apicore\\Primeiro\\Primeiro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Douglas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Douglas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.8\\microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512",
+    "C:\\Users\\Douglas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.9\\microsoft.netcore.app.host.win-x64.3.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}
