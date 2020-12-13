@@ -9,7 +9,7 @@ using Primeiro.Data;
 namespace Primeiro.Migrations
 {
     [DbContext(typeof(PrimeiroContext))]
-    [Migration("20201213180925_InitialMigration")]
+    [Migration("20201213182041_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,12 +28,16 @@ namespace Primeiro.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Howto")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("Line")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Platform")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

@@ -12,9 +12,9 @@ namespace Primeiro.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Howto = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Line = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Platform = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Howto = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
+                    Line = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Platform = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
