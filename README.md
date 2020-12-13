@@ -31,7 +31,6 @@ Criaçao de uma REST API using .NET Core 3.1, usando :
 
 *Exemplos de chamada*
 
-*Exemplos de chamada*
 
 ![Requtest 1](https://github.com/Douglasweb/ApiCore/blob/master/presentation/One.jpg "Chamada 1")
 

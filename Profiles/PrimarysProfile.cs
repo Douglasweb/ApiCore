@@ -9,6 +9,12 @@ namespace Primeiro.Profiles
         public PrimarysProfile()
         {
             CreateMap<Primary, PrimaryReadDto>();
+
+            CreateMap<PrimaryCreateDto, Primary>();
+
+            CreateMap<PrimaryUpdateDto, Primary>();
+
+            CreateMap<Primary, PrimaryUpdateDto>();
         }
 
      }

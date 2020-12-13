@@ -5,6 +5,16 @@ namespace Primeiro.Data
 {
     public class MockPrimeiroRepo : IPrimeiroRepo
     {
+        public void CreatePrimary(Primary pr)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void DeletePrimary(Primary pr)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IEnumerable<Primary> GetAllPrimary()
         {
             var primarys = new List<Primary>
@@ -20,6 +30,16 @@ namespace Primeiro.Data
         public Primary GetPrimaryById(int id)
         {
             return new Primary { Id = id, Howto = "Teste", Line = "Testar", Platform = "Douglas" };
+        }
+
+        public bool Savechanges()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void UpdatePrimary(Primary pr)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
