@@ -5,7 +5,7 @@ namespace Primeiro.Data
 {
    public interface IPrimeiroRepo
    {
-       IEnumerable<Primary> GetAppPrimary();
+       IEnumerable<Primary> GetAllPrimary();
        Primary GetPrimaryById(int id);
    }
 }

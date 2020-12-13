@@ -5,7 +5,7 @@ namespace Primeiro.Data
 {
     public class MockPrimeiroRepo : IPrimeiroRepo
     {
-        public IEnumerable<Primary> GetAppPrimary()
+        public IEnumerable<Primary> GetAllPrimary()
         {
             var primarys = new List<Primary>
             {

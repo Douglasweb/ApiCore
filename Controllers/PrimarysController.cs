@@ -21,7 +21,7 @@ namespace Primeiro.Controllers {
         [HttpGet]
         public ActionResult<IEnumerable<Primary>> GetAllPrimary()
         {
-            var primaryitems = _repository.GetAppPrimary();
+            var primaryitems = _repository.GetAllPrimary();
 
             return Ok(primaryitems);
 
