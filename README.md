@@ -31,9 +31,10 @@ Criaçao de uma REST API using .NET Core 3.1, usando :
 
 *Exemplos de chamada*
 
-Chamada 1:
-![Requtest 1](https://github.com/Douglasweb/ApiCore/blob/master/presentation/One.jpg)
+*Exemplos de chamada*
 
-Chamada2:
+![Requtest 1](https://github.com/Douglasweb/ApiCore/blob/master/presentation/One.jpg "Chamada 1")
 
-![Requtest 2](https://github.com/Douglasweb/ApiCore/blob/master/presentation/All.jpg)
+-------------------
+
+![Requtest 2](https://github.com/Douglasweb/ApiCore/blob/master/presentation/All.jpg "Chamada 2")

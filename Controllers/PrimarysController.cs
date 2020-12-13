@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Primeiro.Data;
+using Primeiro.Dtos;
 using Primeiro.Models;
 
 namespace Primeiro.Controllers {
@@ -12,27 +14,35 @@ namespace Primeiro.Controllers {
     public class PrimarysController : ControllerBase
     {
         private readonly IPrimeiroRepo _repository;
+        private readonly IMapper _mapper;
 
-        public PrimarysController(IPrimeiroRepo repository)
+        public PrimarysController(IPrimeiroRepo repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }        
 
         [HttpGet]
-        public ActionResult<IEnumerable<Primary>> GetAllPrimary()
+        public ActionResult<IEnumerable<PrimaryReadDto>> GetAllPrimary()
         {
             var primaryitems = _repository.GetAllPrimary();
 
-            return Ok(primaryitems);
+            if(primaryitems != null) 
+                return Ok(_mapper.Map<IEnumerable<PrimaryReadDto>>(primaryitems));
+            else
+                return NotFound();            
 
         }
 
         [HttpGet("{id}")]
-        public ActionResult <Primary> GetPrimaryById(int id){
+        public ActionResult <PrimaryReadDto> GetPrimaryById(int id){
             
             var primaryitem = _repository.GetPrimaryById(id);
-
-            return Ok(primaryitem);
+            if(primaryitem != null) 
+                return Ok(_mapper.Map<PrimaryReadDto>(primaryitem));
+            else
+                return NotFound();
+            
         }
 
     }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,10 +31,12 @@ namespace Primeiro
             services.AddDbContext<PrimeiroContext>( opt => opt.UseSqlServer
             (Configuration.GetConnectionString("PrimaryConnection")));
 
-            services.AddControllers();
-            
-            //services.AddScoped<IPrimeiroRepo, MockPrimeiroRepo>();  
-            services.AddScoped<IPrimeiroRepo, SqlPrimaryRepo>();            
+            services.AddControllers(); 
+
+            services.AddAutoMapper( AppDomain.CurrentDomain.GetAssemblies());            
+             
+            services.AddScoped<IPrimeiroRepo, SqlPrimaryRepo>();
+                    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
