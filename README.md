@@ -32,8 +32,24 @@ Criaçao de uma REST API using .NET Core 3.1, usando :
 *Exemplos de chamada*
 
 
-![Requtest 1](https://github.com/Douglasweb/ApiCore/blob/master/presentation/One.jpg "Chamada 1")
+![Request 1](https://github.com/Douglasweb/ApiCore/blob/master/presentation/One.jpg "Request Get By Id")
 
 -------------------
 
-![Requtest 2](https://github.com/Douglasweb/ApiCore/blob/master/presentation/All.jpg "Chamada 2")
+![Request 2](https://github.com/Douglasweb/ApiCore/blob/master/presentation/All.jpg "Request Get All")
+
+-------------------
+
+![Request 3](https://github.com/Douglasweb/ApiCore/blob/master/presentation/Create.jpg "Request Create")
+
+-------------------
+
+![Request 4](https://github.com/Douglasweb/ApiCore/blob/master/presentation/Update.jpg "Request Update")
+
+-------------------
+
+![Request 5](https://github.com/Douglasweb/ApiCore/blob/master/presentation/Patch.jpg "Request Patch")
+
+-------------------
+
+![Request 6](https://github.com/Douglasweb/ApiCore/blob/master/presentation/Delete.jpg "Request Delete")
